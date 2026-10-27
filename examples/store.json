@@ -1,0 +1,22 @@
+{
+  "name": "Example shop in a mall, one counter, two people a day",
+  "shifts": {
+    "mon": [{ "start": "11:00", "end": "15:30", "kind": "early" }, { "start": "15:30", "end": "20:00", "kind": "late" }],
+    "tue": [{ "start": "11:00", "end": "15:30", "kind": "early" }, { "start": "15:30", "end": "20:00", "kind": "late" }],
+    "wed": [{ "start": "10:30", "end": "15:30", "kind": "early" }, { "start": "15:30", "end": "20:00", "kind": "late" }],
+    "thu": [{ "start": "11:00", "end": "22:00", "kind": "open" }, { "start": "16:00", "end": "22:00", "kind": "close" }],
+    "fri": [{ "start": "11:00", "end": "22:00", "kind": "open" }, { "start": "14:00", "end": "22:00", "kind": "close" }],
+    "sat": [{ "start": "11:00", "end": "19:00", "kind": "open" }, { "start": "14:00", "end": "19:00", "kind": "close" }]
+  },
+  "closedDates": ["2026-12-25", "2026-12-26", "2027-01-01"],
+  "rules": {
+    "contractHoursPerWeek": 20,
+    "maxDailyHours": 10,
+    "shortBreakAfterHours": 6,
+    "shortBreakHours": 0.5,
+    "longBreakAfterHours": 10,
+    "longBreakHours": 1,
+    "restBetweenShiftsHours": 11,
+    "minShiftHours": 4
+  }
+}

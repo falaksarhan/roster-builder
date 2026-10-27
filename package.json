@@ -1,0 +1,19 @@
+{
+  "name": "roster-builder",
+  "version": "1.0.0",
+  "description": "Turns a team of student employees, their class timetables and vacations into a monthly shift roster that respects the 20 hour student permit cap and Austrian working time rules.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=23.6" },
+  "scripts": {
+    "example": "node src/cli.ts --store examples/store.json --team examples/team.json --from 2026-11-02 --to 2026-11-29",
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  },
+  "license": "MIT",
+  "author": "Falak Sarhan Saade"
+}

@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "id": "ada", "name": "Ada",
+      "weeklyCap": 20,
+      "lectures": [{ "day": "thu", "from": "08:00", "to": "13:00" }, { "day": "fri", "from": "09:00", "to": "15:00" }],
+      "lectureWeeks": { "from": "2026-10-01", "to": "2027-01-31" }
+    },
+    {
+      "id": "ben", "name": "Ben",
+      "weeklyCap": 20, "flexibleUpTo": 40,
+      "lectures": [{ "day": "mon", "from": "08:00", "to": "12:00" }, { "day": "tue", "from": "10:00", "to": "14:00" }],
+      "lectureWeeks": { "from": "2026-10-01", "to": "2027-01-31" }
+    },
+    {
+      "id": "cleo", "name": "Cleo",
+      "weeklyCap": 20, "maxDaysPerWeek": 3,
+      "lectures": [{ "day": "wed", "from": "08:00", "to": "12:00" }, { "day": "fri", "from": "08:00", "to": "18:00" }],
+      "lectureWeeks": { "from": "2026-10-01", "to": "2027-01-31" },
+      "away": ["2026-11-14"]
+    },
+    {
+      "id": "dario", "name": "Dario",
+      "weeklyCap": 20, "flexibleUpTo": 40,
+      "lectures": [{ "day": "tue", "from": "14:00", "to": "18:00" }],
+      "lectureWeeks": { "from": "2026-10-01", "to": "2027-01-31" },
+      "vacations": [{ "from": "2026-11-16", "to": "2026-11-22" }],
+      "share": 0.75
+    }
+  ],
+  "carryOver": { "2026-11-02": { "ben": 4.5 } }
+}
