@@ -1,5 +1,7 @@
 # roster-builder
 
+![tests](https://github.com/falaksarhan/roster-builder/actions/workflows/tests.yml/badge.svg)
+
 Turns a team of student employees, their class timetables and their vacations into a monthly shift roster that keeps the 20 hour student permit cap and the Austrian working time rules.
 
 I wrote it for my own shop, Pinkberry in the PlusCity mall in Linz, Austria. The whole team studies at the university, every one of them may work 20 hours a week on their student permit, and the shop is open six days a week from late morning to 20:00 or 22:00. Before this, I built the monthly roster by hand and still broke a rule somewhere every month. The real version writes its draft into our staff app, where the team sees the published roster, swaps shifts and keeps their hours account. This public version is the same solver with the database part removed and an example team instead of mine.
@@ -47,6 +49,8 @@ npm test
 runs the 20 tests with the test runner built into Node: breaks and net hours, rest across midnight, lecture overlaps and late starts, and a full month checked against every rule.
 
 ## Example
+
+![The roster builder planning November for the example team](docs/demo.gif)
 
 The example team: Ada (lectures Thursday and Friday), Ben (lectures Monday and Tuesday, may do extra hours), Cleo (at most three days a week, lectures Wednesday and all Friday), Dario (lectures Tuesday afternoon, may do extra hours, on vacation one week). Ben already has 4.5 hours published in the first week.
 
@@ -150,6 +154,7 @@ src/solver.ts        the week solver with restarts and the fairness counters
 src/report.ts        the printed roster, hours, unfilled shifts, fairness table, JSON export
 src/cli.ts           command line
 examples/            an example shop and team
+docs/demo.gif        the example run, recorded
 test/                20 tests, node --test
 ```
 
